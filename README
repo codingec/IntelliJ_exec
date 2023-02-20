@@ -1,0 +1,23 @@
+# Option 
+
+# 1. One command on to create file
+  touch  idea.sh && echo open -na "IntelliJ IDEA.app" --args "$@">>idea.sh
+  # run on the command line
+  idea .
+
+# 2. Second option to 
+ # Creat idea.sh file 
+ touch /usr/local/bin/idea.sh
+
+# Edit idea.sh file with vi or nano
+ nano /usr/local/bin/idea.sh
+ vi /usr/local/bin/idea.sh
+
+# Text to add on the file 
+  #!/bin/sh  
+  open -na "IntelliJ IDEA.app" --args "$@"
+
+###close and save  idea.sh file 
+
+  # run on the command line
+  idea .
